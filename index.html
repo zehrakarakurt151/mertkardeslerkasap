@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Mert Kardeşler Kasap — Tokat'tan gelen lezzetler, 1996'dan beri %100 helal kesim ve toptan & perakende et satışı." />
+  <title>Mert Kardeşler Kasap | 1996'dan Beri Güven ve Ustalıkla</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="resim/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="48x48" href="resim/favicon-48.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="resim/apple-touch-icon.png" />
+  <link rel="shortcut icon" href="resim/favicon-32.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            charcoal: '#121212',
+            ivory: '#F9F8F6',
+            gold: '#D4AF37',
+            crimson: '#8B0000',
+          },
+          fontFamily: {
+            display: ['"Playfair Display"', 'Georgia', 'serif'],
+            sans: ['Montserrat', 'sans-serif'],
+          },
+        },
+      },
+    };
+  </script>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="intro-active bg-charcoal text-ivory font-sans antialiased">
+  <div id="site-intro" class="site-intro" role="status" aria-label="Mert Kardeşler Kasap açılış animasyonu">
+    <div class="site-intro__glow" aria-hidden="true"></div>
+    <div class="site-intro__flame-aura" aria-hidden="true">
+      <svg viewBox="0 0 200 240" fill="none">
+        <path d="M104 12c9 38-15 50-2 79 7 16 24 22 30 42 5-35 30-48 22-87 25 28 38 61 33 94-7 48-43 86-87 86-48 0-87-42-87-94 0-38 20-73 51-101-5 35 5 55 22 67 3-35 25-52 18-86Z" />
+        <path d="M101 110c4 20-12 31-7 47 3 10 12 14 15 27 9-13 20-24 17-45 13 16 19 31 16 47-4 24-21 41-42 41-23 0-42-19-42-44 0-20 10-38 26-52-2 18 3 28 11 34-1-25 11-35 6-55Z" />
+      </svg>
+    </div>
+    <div class="site-intro__embers" aria-hidden="true">
+      <i style="--x: 8%; --delay: 0.1s; --drift: 18px; --size: 3px"></i>
+      <i style="--x: 18%; --delay: 1.4s; --drift: -14px; --size: 2px"></i>
+      <i style="--x: 29%; --delay: 0.7s; --drift: 22px; --size: 4px"></i>
+      <i style="--x: 40%; --delay: 2s; --drift: -18px; --size: 2px"></i>
+      <i style="--x: 52%; --delay: 1.1s; --drift: 15px; --size: 3px"></i>
+      <i style="--x: 63%; --delay: 0.3s; --drift: -20px; --size: 2px"></i>
+      <i style="--x: 74%; --delay: 1.8s; --drift: 12px; --size: 4px"></i>
+      <i style="--x: 86%; --delay: 0.9s; --drift: -16px; --size: 3px"></i>
+      <i style="--x: 94%; --delay: 2.3s; --drift: 10px; --size: 2px"></i>
+    </div>
+    <div class="site-intro__content">
+      <div class="site-intro__line" aria-hidden="true"></div>
+      <img src="resim/logo.png" alt="Mert Kardeşler Kasap" class="site-intro__logo" width="260" height="260" />
+      <p class="site-intro__brand">Mert Kardeşler Kasap</p>
+      <p class="site-intro__origin">Tokat'tan Gelen Lezzetler</p>
+      <div class="site-intro__divider" aria-hidden="true"><span></span></div>
+      <p class="site-intro__service">Toptan <span>&</span> Perakende</p>
+      <p class="site-intro__since">1996'dan beri güven ve ustalıkla</p>
+    </div>
+  </div>
+
+  <a href="#icerik" class="skip-link">İçeriğe atla</a>
+
+  <!-- Header -->
+  <header id="site-header" class="fixed inset-x-0 top-0 z-50 transition-all duration-300">
+    <div class="mx-auto flex max-w-7xl items-center justify-between gap-4 px-5 py-4 lg:px-8">
+      <a href="#anasayfa" class="group flex shrink-0 items-center gap-3" aria-label="Mert Kardeşler Kasap Anasayfa">
+        <img
+          src="resim/logo.png"
+          alt="Mert Kardeşler Kasap logosu"
+          class="h-16 w-auto shrink-0 object-contain sm:h-20 lg:h-24"
+          width="96"
+          height="96"
+        />
+        <span class="leading-tight">
+          <span class="block font-display text-xl font-semibold tracking-wide text-ivory sm:text-2xl">Mert Kardeşler</span>
+          <span class="block text-xs font-medium uppercase tracking-[0.28em] text-gold sm:text-sm">Kasap</span>
+        </span>
+      </a>
+
+      <nav class="hidden items-center gap-8 md:flex" aria-label="Ana menü">
+        <a href="#anasayfa" class="nav-link">Anasayfa</a>
+        <a href="#hakkimizda" class="nav-link">Hakkımızda</a>
+        <a href="#urunlerimiz" class="nav-link">Ürünlerimiz</a>
+        <a href="#iletisim" class="nav-link">İletişim</a>
+      </nav>
+
+      <div class="header-actions flex items-center gap-3">
+        <button
+          type="button"
+          id="search-toggle"
+          class="header-search-toggle"
+          aria-expanded="false"
+          aria-controls="product-search"
+          aria-label="Ürün aramasını aç"
+        >
+          <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
+            <circle cx="11" cy="11" r="7"></circle>
+            <path stroke-linecap="round" d="m20 20-4-4"></path>
+          </svg>
+        </button>
+
+        <form id="product-search" class="product-search product-search--header" role="search" autocomplete="off" hidden>
+          <label for="product-search-input" class="sr-only">Ürünlerde ara</label>
+          <div class="product-search__field">
+            <svg class="product-search__icon" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
+              <circle cx="11" cy="11" r="7"></circle>
+              <path stroke-linecap="round" d="m20 20-4-4"></path>
+            </svg>
+            <input
+              id="product-search-input"
+              type="search"
+              placeholder="Ürün ara: antrikot, kuzu pirzola, sucuk..."
+              aria-controls="product-search-results"
+              aria-expanded="false"
+            />
+            <button type="submit">Ara</button>
+          </div>
+          <div id="product-search-results" class="product-search__results" role="listbox" aria-label="Ürün arama sonuçları" hidden></div>
+        </form>
+
+        <a href="tel:+905333770760" class="cta-primary hidden sm:inline-flex">Hemen Ara / Sipariş Ver</a>
+        <button type="button" id="menu-toggle" class="flex h-10 w-10 items-center justify-center border border-gold/40 text-ivory md:hidden" aria-expanded="false" aria-controls="mobile-menu" aria-label="Menüyü aç">
+          <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+            <path stroke-linecap="round" d="M4 7h16M4 12h16M4 17h16" />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <div id="mobile-menu" class="hidden border-t border-gold/20 bg-charcoal/95 backdrop-blur-md md:hidden" hidden>
+      <nav class="flex flex-col gap-1 px-5 py-4" aria-label="Mobil menü">
+        <a href="#anasayfa" class="mobile-nav-link">Anasayfa</a>
+        <a href="#hakkimizda" class="mobile-nav-link">Hakkımızda</a>
+        <a href="#urunlerimiz" class="mobile-nav-link">Ürünlerimiz</a>
+        <a href="#iletisim" class="mobile-nav-link">İletişim</a>
+        <a href="tel:+905333770760" class="cta-primary mt-3 justify-center">Hemen Ara / Sipariş Ver</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="icerik">
+    <!-- Hero -->
+    <section id="anasayfa" class="relative min-h-screen overflow-hidden" aria-labelledby="hero-heading">
+      <div class="hero-slider" aria-hidden="true">
+        <div class="hero-slide is-active" style="--slide-img: url('resim/danakapakfoto.png')"></div>
+        <div class="hero-slide" style="--slide-img: url('resim/kuzukarkas.png')"></div>
+        <div class="hero-slide" style="--slide-img: url('resim/1.png')"></div>
+        <div class="hero-slide" style="--slide-img: url('resim/2.png')"></div>
+        <div class="hero-slide" style="--slide-img: url('resim/3.png')"></div>
+        <div class="hero-slide" style="--slide-img: url('resim/4.png')"></div>
+      </div>
+      <div class="hero-overlay absolute inset-0" aria-hidden="true"></div>
+
+      <div class="hero-content-wrap relative z-20 mx-auto flex min-h-screen max-w-7xl flex-col justify-end px-5 pb-16 pt-28 sm:justify-center sm:pb-24 sm:pt-32 lg:px-8">
+        <div class="hero-content max-w-3xl">
+          <p class="mb-5 text-xs font-semibold uppercase tracking-[0.35em] text-gold sm:text-sm animate-fade-up">
+            Tokat'tan Gelen Lezzetler • 1996'dan Beri
+          </p>
+
+          <h1 id="hero-heading" class="mb-6 font-display text-4xl font-semibold leading-[1.12] tracking-tight text-ivory sm:mb-8 sm:text-5xl lg:text-6xl animate-fade-up delay-1">
+            <span class="block font-display text-gold">Mert Kardeşler Kasap</span>
+            <span class="mt-2 block text-[0.72em] font-medium text-ivory/95">Sofranıza Değer Katan Lezzetler</span>
+          </h1>
+
+          <p class="mb-6 max-w-xl text-base leading-relaxed text-ivory/75 sm:text-lg animate-fade-up delay-2">
+            Otuz yıldır aynı ustalık, aynı güven. Günlük taze kesim ve seçilmiş etlerde toptan &amp; perakende hizmet.
+          </p>
+
+          <p class="hero-service-title animate-fade-up delay-3">
+            Toptan <span>&amp;</span> Perakende
+          </p>
+
+          <div class="flex flex-col gap-3 sm:flex-row sm:items-center animate-fade-up delay-3">
+            <a href="#urunlerimiz" class="cta-primary">Ürünlerimizi İnceleyin</a>
+            <a href="#iletisim" class="cta-secondary">Yol Tarifi Al</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-controls z-30" aria-label="Arka plan slayt kontrolleri">
+        <button type="button" class="hero-arrow hero-arrow--prev" aria-label="Önceki görsel">
+          <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.75" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+          </svg>
+        </button>
+        <div class="hero-dots" role="tablist" aria-label="Arka plan slaytları"></div>
+        <button type="button" class="hero-arrow hero-arrow--next" aria-label="Sonraki görsel">
+          <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.75" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+          </svg>
+        </button>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="hakkimizda" class="bg-ivory text-charcoal" aria-labelledby="about-heading">
+      <div class="mx-auto max-w-7xl px-5 py-20 lg:px-8 lg:py-28">
+        <div class="grid gap-14 lg:grid-cols-12 lg:gap-16">
+          <div class="lg:col-span-5">
+            <p class="mb-3 text-xs font-semibold uppercase tracking-[0.3em] text-gold">Hakkımızda</p>
+            <h2 id="about-heading" class="font-display text-3xl font-semibold leading-tight sm:text-4xl lg:text-5xl">
+              1996'dan Bugüne,<br />
+              <span class="text-crimson">Bir Aile Geleneği</span>
+            </h2>
+            <div class="mt-6 h-px w-16 bg-gold" aria-hidden="true"></div>
+          </div>
+
+          <div class="lg:col-span-7">
+            <p class="text-lg leading-relaxed text-charcoal/80">
+              Mert Kardeşler Kasap, üç nesildir süregelen kasaplık bilgisini modern hijyen ve hizmet anlayışıyla birleştirir.
+              Her kesimi ustalık ve özenle hazırlar, sofralarınıza güvenle ulaştırırız.
+            </p>
+            <p class="mt-5 text-base leading-relaxed text-charcoal/65">
+              Geleneksel et işleme yöntemlerimizi korurken bireysel ve işletme müşterilerimize toptan &amp; perakende,
+              şeffaf ve güvenilir hizmet sunuyoruz. Kalite bizim için bir vaat değil — günlük pratiğimizdir.
+            </p>
+          </div>
+        </div>
+
+        <div class="mt-16 grid gap-8 sm:grid-cols-3">
+          <article class="about-stat reveal">
+            <p class="font-display text-4xl font-semibold text-crimson sm:text-5xl">30+</p>
+            <p class="mt-2 text-sm font-semibold uppercase tracking-[0.2em] text-charcoal">Yıllık Miras</p>
+            <p class="mt-3 text-sm leading-relaxed text-charcoal/60">Since 1996 — aynı mahalle, aynı güven, aynı ustalık.</p>
+          </article>
+          <article class="about-stat reveal delay-1">
+            <p class="font-display text-4xl font-semibold text-crimson sm:text-5xl">Günlük</p>
+            <p class="mt-2 text-sm font-semibold uppercase tracking-[0.2em] text-charcoal">Taze Kesim</p>
+            <p class="mt-3 text-sm leading-relaxed text-charcoal/60">Her sabah taze hazırlanan, özenle seçilmiş etler.</p>
+          </article>
+          <article class="about-stat reveal delay-2">
+            <p class="font-display text-4xl font-semibold text-crimson sm:text-5xl">Usta</p>
+            <p class="mt-2 text-sm font-semibold uppercase tracking-[0.2em] text-charcoal">İşçilik</p>
+            <p class="mt-3 text-sm leading-relaxed text-charcoal/60">Geleneksel kasaplık bilgisi, modern sunumla buluşur.</p>
+          </article>
+        </div>
+
+        <article class="trade-service reveal" aria-labelledby="trade-service-heading">
+          <div class="trade-service__heading">
+            <p>Hizmet Modelimiz</p>
+            <h3 id="trade-service-heading">Toptan <span>&amp;</span> Perakende Et Tedariki</h3>
+          </div>
+          <div class="trade-service__content">
+            <p>
+              Günlük ihtiyaçlardan işletme tedariğine kadar, aynı kalite ve hijyen standardıyla doğru ürünü doğru
+              miktarda hazırlıyoruz.
+            </p>
+            <div class="trade-service__options">
+              <div>
+                <strong>Perakende</strong>
+                <span>Eviniz ve sofranız için günlük taze, isteğinize göre hazırlanmış ürünler.</span>
+              </div>
+              <div>
+                <strong>Toptan</strong>
+                <span>Restoran, otel ve işletmeler için düzenli, güvenilir ve ihtiyaca özel et tedariği.</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Helal & Hygiene -->
+        <div class="mt-20 border border-gold/30 bg-white/50 px-6 py-10 sm:px-10 sm:py-12 reveal">
+          <div class="mb-10 max-w-2xl">
+            <span class="helal-badge helal-badge--light mb-4" role="status">
+              <span class="helal-badge__icon" aria-hidden="true">💯</span>
+              <span class="helal-badge__text">%100 Helal Kesim</span>
+            </span>
+            <h3 class="font-display text-2xl font-semibold sm:text-3xl">Helal Kesim ve Hijyen Standartları</h3>
+            <p class="mt-3 text-charcoal/65">
+              İnanç değerlerimize ve sağlığınıza saygı duyarak, her aşamada şeffaf ve titiz standartlar uygularız.
+            </p>
+          </div>
+          <ul class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+            <li class="flex gap-4">
+              <span class="feature-icon" aria-hidden="true">
+                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                </svg>
+              </span>
+              <div>
+                <h4 class="font-semibold text-charcoal">%100 Helal Kesim</h4>
+                <p class="mt-1 text-sm leading-relaxed text-charcoal/60">İslami usullere uygun, belgelenmiş helal kesim süreci.</p>
+              </div>
+            </li>
+            <li class="flex gap-4">
+              <span class="feature-icon" aria-hidden="true">
+                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 3.104v5.714a2.25 2.25 0 0 1-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.3 24.3 0 0 1 4.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15.3M14.25 3.104c.251.023.501.05.75.082M19.8 15.3l-1.57.393A9.065 9.065 0 0 1 12 15a9.065 9.065 0 0 1-6.23.693L5 14.5m14.8.8 1.402 1.402c1.232 1.232.65 3.318-1.067 3.611A48.31 48.31 0 0 1 12 21c-2.773 0-5.491-.235-8.135-.687-1.718-.293-2.3-2.379-1.067-3.61L5 14.5" />
+                </svg>
+              </span>
+              <div>
+                <h4 class="font-semibold text-charcoal">Soğuk Zincir</h4>
+                <p class="mt-1 text-sm leading-relaxed text-charcoal/60">Kesimden tezgâha kadar kesintisiz soğuk zincir kontrolü.</p>
+              </div>
+            </li>
+            <li class="flex gap-4 sm:col-span-2 lg:col-span-1">
+              <span class="feature-icon" aria-hidden="true">
+                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z" />
+                </svg>
+              </span>
+              <div>
+                <h4 class="font-semibold text-charcoal">Hijyen Protokolü</h4>
+                <p class="mt-1 text-sm leading-relaxed text-charcoal/60">Günlük sterilizasyon ve gıda güvenliği denetimleri.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Products -->
+    <section id="urunlerimiz" class="relative bg-charcoal" aria-labelledby="products-heading">
+      <div class="absolute inset-0 opacity-[0.04] pointer-events-none" style="background-image: radial-gradient(circle at 1px 1px, #D4AF37 1px, transparent 0); background-size: 28px 28px;" aria-hidden="true"></div>
+      <div class="relative mx-auto max-w-7xl px-5 py-20 lg:px-8 lg:py-28">
+        <div class="mb-14 max-w-2xl">
+          <p class="mb-3 text-xs font-semibold uppercase tracking-[0.3em] text-gold">Ürünlerimiz</p>
+          <h2 id="products-heading" class="font-display text-3xl font-semibold text-ivory sm:text-4xl lg:text-5xl">
+            Premium Seçkimiz
+          </h2>
+          <p class="mt-4 text-ivory/65">
+            Her kategori, ustalarımızın özeni ve günlük taze kesimle hazırlanır.
+          </p>
+        </div>
+
+        <div class="products-grid grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          <div class="product-block reveal" data-category="dana">
+            <button type="button" class="product-card group text-left" aria-expanded="false" aria-controls="panel-dana">
+              <div class="product-card__media" style="--img: url('resim/danakapakfoto.png')"></div>
+              <div class="product-card__body">
+                <h3 class="font-display text-xl font-semibold text-ivory">Dana</h3>
+                <p class="mt-2 text-sm leading-relaxed text-ivory/60">Dana karkas, antrikot, ribs, dallas, T bone ve günlük taze kesimler.</p>
+                <span class="product-card__link">Keşfet</span>
+              </div>
+            </button>
+            <div id="panel-dana" class="product-subpanel" hidden></div>
+          </div>
+
+          <div class="product-block reveal delay-1" data-category="kuzu">
+            <button type="button" class="product-card group text-left" aria-expanded="false" aria-controls="panel-kuzu">
+              <div class="product-card__media" style="--img: url('resim/kuzukarkas.png')"></div>
+              <div class="product-card__body">
+                <h3 class="font-display text-xl font-semibold text-ivory">Kuzu</h3>
+                <p class="mt-2 text-sm leading-relaxed text-ivory/60">Kuzu karkas, kaburga, külbastı, lokum, kol, gerdan ve seçilmiş kuzu ürünleri.</p>
+                <span class="product-card__link">Keşfet</span>
+              </div>
+            </button>
+            <div id="panel-kuzu" class="product-subpanel" hidden></div>
+          </div>
+
+          <div class="product-block reveal delay-2" data-category="spesiyel">
+            <button type="button" class="product-card group text-left" aria-expanded="false" aria-controls="panel-spesiyel">
+              <div class="product-card__media" style="--img: url('resim/spesiyel.png')"></div>
+              <div class="product-card__body">
+                <h3 class="font-display text-xl font-semibold text-ivory">Spesiyel Ürünler</h3>
+                <p class="mt-2 text-sm leading-relaxed text-ivory/60">Adana, Urfa, ciğer şiş, et şiş ve dana pirzola gibi özel lezzetler.</p>
+                <span class="product-card__link">Keşfet</span>
+              </div>
+            </button>
+            <div id="panel-spesiyel" class="product-subpanel" hidden></div>
+          </div>
+
+          <div class="product-block reveal" data-category="tavuk">
+            <button type="button" class="product-card group text-left" aria-expanded="false" aria-controls="panel-tavuk">
+              <div class="product-card__media" style="--img: url('resim/tavukkapakfoto.png')"></div>
+              <div class="product-card__body">
+                <h3 class="font-display text-xl font-semibold text-ivory">Tavuk</h3>
+                <p class="mt-2 text-sm leading-relaxed text-ivory/60">Göğüs, baget, kanat ve günlük taze tavuk çeşitleri.</p>
+                <span class="product-card__link">Keşfet</span>
+              </div>
+            </button>
+            <div id="panel-tavuk" class="product-subpanel" hidden></div>
+          </div>
+
+          <div class="product-block reveal delay-1" data-category="sakatat">
+            <button type="button" class="product-card group text-left" aria-expanded="false" aria-controls="panel-sakatat">
+              <div class="product-card__media" style="--img: url('resim/sakatatkapakfoto.png')"></div>
+              <div class="product-card__body">
+                <h3 class="font-display text-xl font-semibold text-ivory">Sakatat</h3>
+                <p class="mt-2 text-sm leading-relaxed text-ivory/60">Ciğer, kelle, yürek, kuzu yürek, böbrek ve geleneksel sakatat çeşitleri.</p>
+                <span class="product-card__link">Keşfet</span>
+              </div>
+            </button>
+            <div id="panel-sakatat" class="product-subpanel" hidden></div>
+          </div>
+
+          <div class="product-block reveal delay-2" data-category="kofte">
+            <button type="button" class="product-card group text-left" aria-expanded="false" aria-controls="panel-kofte">
+              <div class="product-card__media" style="--img: url('resim/köftekapakfoto.png')"></div>
+              <div class="product-card__body">
+                <h3 class="font-display text-xl font-semibold text-ivory">Köfte</h3>
+                <p class="mt-2 text-sm leading-relaxed text-ivory/60">Ev yapımı ve hamburger köftesi — usta eli ve dengeli baharat.</p>
+                <span class="product-card__link">Keşfet</span>
+              </div>
+            </button>
+            <div id="panel-kofte" class="product-subpanel" hidden></div>
+          </div>
+
+          <div class="product-block reveal" data-category="sarkuteri">
+            <button type="button" class="product-card group text-left" aria-expanded="false" aria-controls="panel-sarkuteri">
+              <div class="product-card__media" style="--img: url('resim/şarküterikapakfoto.png')"></div>
+              <div class="product-card__body">
+                <h3 class="font-display text-xl font-semibold text-ivory">Şarküteri</h3>
+                <p class="mt-2 text-sm leading-relaxed text-ivory/60">Sucuk ve özel hazır şarküteri ürünleri.</p>
+                <span class="product-card__link">Keşfet</span>
+              </div>
+            </button>
+            <div id="panel-sarkuteri" class="product-subpanel" hidden></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Customer Reviews -->
+    <section id="yorumlar" class="reviews-section" aria-labelledby="reviews-heading">
+      <div class="mx-auto max-w-7xl px-5 py-20 lg:px-8 lg:py-28">
+        <div class="reviews-header">
+          <div>
+            <p class="mb-3 text-xs font-semibold uppercase tracking-[0.3em] text-crimson">Müşteri Yorumları</p>
+            <h2 id="reviews-heading" class="font-display text-3xl font-semibold text-charcoal sm:text-4xl lg:text-5xl">
+              Güvenle Tercih Ediliyoruz
+            </h2>
+          </div>
+          <p>
+            Tazelik, usta işçilik ve güvenilir hizmet anlayışımızla bireysel ve işletme müşterilerimizin yanındayız.
+          </p>
+        </div>
+
+        <div class="reviews-grid">
+          <article class="review-card reveal">
+            <div class="review-card__top">
+              <span class="review-card__quote" aria-hidden="true">“</span>
+              <div class="review-card__stars" aria-label="5 üzerinden 5 yıldız">★★★★★</div>
+            </div>
+            <blockquote>
+              Etler her zaman taze ve özenle hazırlanıyor. İstediğimiz kesime göre yardımcı olmaları büyük kolaylık.
+            </blockquote>
+            <footer>
+              <strong>Perakende Müşterisi</strong>
+              <span>Kepez, Antalya</span>
+            </footer>
+          </article>
+
+          <article class="review-card reveal delay-1">
+            <div class="review-card__top">
+              <span class="review-card__quote" aria-hidden="true">“</span>
+              <div class="review-card__stars" aria-label="5 üzerinden 5 yıldız">★★★★★</div>
+            </div>
+            <blockquote>
+              Düzenli tedarik, ürün kalitesi ve zamanında hazırlık konusunda güvenebildiğimiz bir işletme.
+            </blockquote>
+            <footer>
+              <strong>İşletme Müşterisi</strong>
+              <span>Toptan Tedarik</span>
+            </footer>
+          </article>
+
+          <article class="review-card reveal delay-2">
+            <div class="review-card__top">
+              <span class="review-card__quote" aria-hidden="true">“</span>
+              <div class="review-card__stars" aria-label="5 üzerinden 5 yıldız">★★★★★</div>
+            </div>
+            <blockquote>
+              Güler yüzlü hizmet, hijyenik ortam ve kaliteli ürünler. Ailece gönül rahatlığıyla tercih ediyoruz.
+            </blockquote>
+            <footer>
+              <strong>Düzenli Müşteri</strong>
+              <span>Mert Kardeşler Kasap</span>
+            </footer>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact & Footer -->
+    <section id="iletisim" class="bg-charcoal border-t border-gold/15" aria-labelledby="contact-heading">
+      <div class="mx-auto max-w-7xl px-5 py-20 lg:px-8 lg:py-28">
+        <div class="mb-12 max-w-2xl">
+          <p class="mb-3 text-xs font-semibold uppercase tracking-[0.3em] text-gold">İletişim</p>
+          <h2 id="contact-heading" class="font-display text-3xl font-semibold text-ivory sm:text-4xl">
+            Bizi Ziyaret Edin
+          </h2>
+        </div>
+
+        <div class="grid gap-10 lg:grid-cols-2 lg:gap-14">
+          <div class="space-y-10">
+            <div>
+              <h3 class="contact-detail-heading">
+                <span class="contact-detail-heading__icon" aria-hidden="true">
+                  <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.7">
+                    <circle cx="12" cy="12" r="8.5"></circle>
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 7.5V12l3 2"></path>
+                  </svg>
+                </span>
+                Çalışma Saatleri
+              </h3>
+              <dl class="mt-4 space-y-2 text-ivory/80">
+                <div class="contact-hour-row">
+                  <dt>
+                    <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+                      <rect x="3.5" y="5" width="17" height="15" rx="2"></rect>
+                      <path d="M7.5 3v4M16.5 3v4M3.5 9.5h17"></path>
+                    </svg>
+                    Hafta içi
+                  </dt>
+                  <dd>07:30 – 20:30</dd>
+                </div>
+                <div class="contact-hour-row">
+                  <dt>
+                    <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M5 16.5a7.5 7.5 0 0 1 14 0M12 5v2M4.2 9.2l1.4 1.1M19.8 9.2l-1.4 1.1M3 16.5h18"></path>
+                    </svg>
+                    Hafta sonu
+                  </dt>
+                  <dd>07:30 – 20:30</dd>
+                </div>
+              </dl>
+            </div>
+
+            <div>
+              <h3 class="contact-detail-heading">
+                <span class="contact-detail-heading__icon" aria-hidden="true">
+                  <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.7">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M7.4 3.8 9.6 8l-2.1 1.8a15.2 15.2 0 0 0 6.7 6.7l1.8-2.1 4.2 2.2-.8 3.2a2 2 0 0 1-2 1.5C9.3 20.7 3.3 14.7 2.7 6.6a2 2 0 0 1 1.5-2l3.2-.8Z"></path>
+                  </svg>
+                </span>
+                Telefon
+              </h3>
+              <a href="tel:+905333770760" class="mt-3 inline-block font-display text-2xl text-ivory transition hover:text-gold focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-gold">
+                +90 533 377 07 60
+              </a>
+              <p class="mt-2 text-sm text-ivory/55">Sipariş ve bilgilendirme için bizi arayın.</p>
+            </div>
+
+            <div>
+              <h3 class="contact-detail-heading">
+                <span class="contact-detail-heading__icon" aria-hidden="true">
+                  <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.7">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z"></path>
+                    <circle cx="12" cy="10" r="2.5"></circle>
+                  </svg>
+                </span>
+                Adres
+              </h3>
+              <p class="mt-3 text-ivory/75 leading-relaxed">
+                Güneş Mah., Mehmet Atay Cad., No:97/A<br />
+                Kepez, Antalya
+              </p>
+            </div>
+
+            <div>
+              <h3 class="text-xs font-semibold uppercase tracking-[0.25em] text-gold">WhatsApp</h3>
+              <ul class="mt-4 flex items-center gap-4">
+                <li>
+                  <a href="https://wa.me/905333770760?text=Merhaba%2C%20Mert%20Karde%C5%9Fler%20Kasap%27tan%20sipari%C5%9F%20vermek%20istiyorum." target="_blank" rel="noopener noreferrer" class="social-link social-link--whatsapp" aria-label="WhatsApp ile yazın">
+                    <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-1.74.444a.996.996 0 01-1.164-.928l.415-1.724-.239-.379a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div>
+            <div class="map-embed">
+              <iframe
+                title="Mert Kardeşler Kasap — Güneş Mah., Mehmet Atay Cad. No:97/A, Kepez, Antalya"
+                src="https://maps.google.com/maps?q=G%C3%BCne%C5%9F%20Mahallesi%2C%20Mehmet%20Atay%20Caddesi%20No%3A97%2FA%2C%20Kepez%2C%20Antalya&hl=tr&z=16&output=embed"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                allowfullscreen
+              ></iframe>
+              <a
+                href="https://www.google.com/maps/dir/?api=1&destination=G%C3%BCne%C5%9F+Mahallesi,+Mehmet+Atay+Caddesi+No:97/A,+Kepez,+Antalya"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="cta-primary map-embed__cta"
+              >
+                Yol Tarifi Al
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer class="border-t border-gold/15">
+        <div class="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 px-5 py-8 sm:flex-row lg:px-8">
+          <p class="text-sm text-ivory/45">
+            &copy; <span id="year"></span> Mert Kardeşler Kasap. Tüm hakları saklıdır.
+          </p>
+          <p class="text-xs uppercase tracking-[0.2em] text-gold/70">1996'dan beri güvenle</p>
+        </div>
+      </footer>
+    </section>
+  </main>
+
+  <dialog id="product-lightbox" class="product-lightbox" aria-labelledby="product-lightbox-title">
+    <button type="button" class="product-lightbox__close" aria-label="Büyük görseli kapat">
+      <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+        <path stroke-linecap="round" d="M6 6l12 12M18 6 6 18"></path>
+      </svg>
+    </button>
+    <figure>
+      <img id="product-lightbox-image" src="" alt="" />
+      <figcaption id="product-lightbox-title"></figcaption>
+    </figure>
+  </dialog>
+
+  <a
+    href="https://wa.me/905333770760?text=Merhaba%2C%20Mert%20Karde%C5%9Fler%20Kasap%27tan%20sipari%C5%9F%20vermek%20istiyorum."
+    class="whatsapp-float"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="WhatsApp ile sipariş ver"
+  >
+    <svg class="h-7 w-7" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-1.74.444a.996.996 0 01-1.164-.928l.415-1.724-.239-.379a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
